@@ -9,8 +9,8 @@ import ListFinished from './Components/ListFinished'
 
 function App() {
   // 1. Initialize state as an array of strings
-  const [todos, setTodos] = useState([]);
-  const[finish, setFinish] = useState([]);
+  const [todos, setTodos] = useState<string[]>([]);
+  const[finish, setFinish] = useState<string[]>([]);
   const [onGo, SetOnGo] = useState<number>(0);
   const [showFinished, setShowFinished] = useState(false);
 
@@ -21,13 +21,13 @@ function App() {
     setTodos([...todos, taskName]);
   }
   function Deletes(todo:number){
-    const newTodos = todos.filter((_, index) => index !== todo);
+    const newTodos = todos.filter((_:string, index:number) => index !== todo);
     setTodos(newTodos);
   }
   function Finishes(todo:number){
     const task = todos[todo];
 
-    const newTodos = todos.filter((_, index) => index !== todo);
+    const newTodos = todos.filter((_:string, index:number) => index !== todo);
     setTodos(newTodos);
 
     setFinish([...finish, task]);
