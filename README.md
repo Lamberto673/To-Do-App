@@ -2,8 +2,8 @@
 
 A modern and minimal **To-Do List web application** built with **React, TypeScript, and Vite**.  
 This app allows users to manage daily tasks by separating **ongoing** and **finished** activities with a clean and responsive UI.
-Click The link 
 ---
+Click The link 
 https://to-do-app-4ie5.vercel.app/
 ## 🚀 Features
 
