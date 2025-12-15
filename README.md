@@ -1,73 +1,86 @@
-# React + TypeScript + Vite
+# 📝 To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and minimal **To-Do List web application** built with **React, TypeScript, and Vite**.  
+This app allows users to manage daily tasks by separating **ongoing** and **finished** activities with a clean and responsive UI.
+Click The link 
+---
+https://to-do-app-4ie5.vercel.app/
+## 🚀 Features
 
-Currently, two official plugins are available:
+- ✅ Add new tasks
+- 🔄 Mark tasks as **Finished**
+- 🗑️ Delete tasks
+- 📂 Toggle between **Ongoing** and **Finished** views
+- ⚡ Fast development & build using **Vite**
+- 🎨 Styled with **Bootstrap**
+- 🧠 Type-safe state management with **TypeScript**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React + TypeScript
+- **Build Tool:** Vite
+- **Styling:** CSS + Bootstrap
+- **Icons:** Font Awesome
+- **Deployment:** Vercel
 
-## Expanding the ESLint configuration
+---
+src/
+├─ Components/
+│ ├─ List.tsx
+│ ├─ ListFinished.tsx
+│ ├─ ListBar.tsx
+│ ├─ SearchBar.tsx
+│ └─ SideBar.tsx
+│
+├─ App.tsx
+├─ main.tsx
+├─ index.css
+└─ App.css
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚙️ Installation & Setup
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/USERNAME/To-Do-App.git
+cd To-Do-App
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🌍 Deployment
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This project is deployed using Vercel.
+
+Vercel Settings
+
+Framework Preset: Vite
+
+Build Command: npm run build
+
+Output Directory: dist
+
+📌 Future Improvements
+
+💾 Persist tasks using localStorage
+
+🎯 Drag & drop task reordering
+
+🌙 Dark mode
+
+🔐 User authentication
+
+📱 Improved mobile UI
+
+📄 License
+
+This project is open-source and available under the MIT License.
+
+👤 Author
+
+Donny Marcus Steward
+GitHub: https://github.com/Lamberto673
+## 📁 Project Structure
+
